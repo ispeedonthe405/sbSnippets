@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>sbinot</Title>
+			<Description>Implements INotifyPropertyChanged</Description>
+			<Shortcut>sbinot</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[]]>
+				///////////////////////////////////////////////////////////
+				#region INotifyPropertyChanged
+
+				protected void SetField&lt;TField>
+					(ref TField field, TField value, string propertyName)
+					{
+					if (EqualityComparer&lt;TField>.Default.Equals(field, value))
+					{
+						return;
+					}
+
+					field = value;
+					OnPropertyChanged(propertyName);
+				}
+
+				#endregion INotifyPropertyChanged
+				///////////////////////////////////////////////////////////
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
