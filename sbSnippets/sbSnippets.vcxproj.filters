@@ -4,5 +4,6 @@
     <Xml Include="sbregion.xml" />
     <Xml Include="sbprop.xml" />
     <Xml Include="sbinot.xml" />
+    <Xml Include="sbtry.xml" />
   </ItemGroup>
 </Project>

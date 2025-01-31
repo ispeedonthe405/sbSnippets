@@ -130,6 +130,7 @@
     <Xml Include="sbinot.xml" />
     <Xml Include="sbprop.xml" />
     <Xml Include="sbregion.xml" />
+    <Xml Include="sbtry.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

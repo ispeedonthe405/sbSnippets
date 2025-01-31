@@ -3,8 +3,6 @@
     internal class Program
     {
 
-
-
 		///////////////////////////////////////////////////////////
 		#region INotifyPropertyChanged
 
@@ -53,6 +51,17 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-        }
+
+
+			try
+			{
+
+			}
+			catch (Exception ex)
+			{
+				sbdotnet.Logger.Error(ex);
+			}
+
+		}
     }
 }
